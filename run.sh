@@ -1,5 +1,9 @@
 #!/bin/bash
 
+source setup.sh
+
+cp jorgan-fluidsynth/target/native/libfluidsynthJNI.{jnilib,dylib}   # LESTER
+
 set -e
 
 java \

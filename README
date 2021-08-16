@@ -1,0 +1,29 @@
+Aug 16, 2021 12:51:15 AM jorgan.fluidsynth.Fluidsynth <clinit>
+INFO: native failure
+java.lang.UnsatisfiedLinkError: Can't load library: /Users/lester/JORGAN/sources/jorgan-fluidsynth/target/native/libfluidsynthJNI.dylib
+	at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2387)
+	at java.base/java.lang.Runtime.load0(Runtime.java:746)
+	at java.base/java.lang.System.load(System.java:1857)
+	at jorgan.util.NativeUtils.load(NativeUtils.java:54)
+
+But actual file is called
+/Users/lester/JORGAN/sources/jorgan-fluidsynth/target/native/libfluidsynthJNI.jnilib 
+
+Solved with copy in run.sh
+
+
+
+
+---
+
+
+fluidsynth: error: Couldn't find the requested audio driver dsound. Valid drivers are: coreaudio, file.
+fluidsynth: error: Couldn't find the requested audio driver dsound. Valid drivers are: coreaudio, file.
+
+
+Had to hand edit the balman organ disposisition to use coreaudio not dsound.
+
+Had to instsall JDK version 11 (did not work with JDK version 16)
+
+
+wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/11.0.12+8/f411702ca7704a54a79ead0c2e0942a3/jdk-11.0.12_osx-x64_bin.dmg

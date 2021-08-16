@@ -154,6 +154,7 @@ public class OrganFrame extends JFrame implements SessionAware {
 					openOrgan(new File(ev.getActionCommand()));
 				}
 			});
+
 		}
 
 		JMenuBar menuBar = new JMenuBar();

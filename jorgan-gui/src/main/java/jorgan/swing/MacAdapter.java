@@ -199,17 +199,25 @@ public abstract class MacAdapter {
 	public static MacAdapter getInstance() {
 		if (adapter == null) {
 			if (isMac()) {
-				try {
+				try {   
+                                        System.out.println("LESTER 1");
 					adapter = new Real();
+                                        System.out.println("LESTER 2");
 				} catch (Throwable throwable) {
+                                        System.out.println("LESTER 3");
 					unexpected(throwable);
+                                        System.out.println("LESTER 4");
 
 					adapter = new Dummy();
+                                        System.out.println("LESTER 5");
 				}
 			} else {
+                                        System.out.println("LESTER 6");
 				adapter = new Dummy();
+                                        System.out.println("LESTER 7");
 			}
 		}
+                                        System.out.println("LESTER 8");
 		return adapter;
 	}
 
