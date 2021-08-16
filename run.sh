@@ -7,6 +7,7 @@ cp jorgan-fluidsynth/target/native/libfluidsynthJNI.{jnilib,dylib}   # LESTER
 set -e
 
 java \
+--illegal-access=permit \
 -Djorgan.skins.path=jorgan-skins \
 -Djorgan.creative.library.path=jorgan-creative/target/native \
 -Djorgan.fluidsynth.library.path=jorgan-fluidsynth/target/native \
