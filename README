@@ -21,9 +21,16 @@ fluidsynth: error: Couldn't find the requested audio driver dsound. Valid driver
 fluidsynth: error: Couldn't find the requested audio driver dsound. Valid drivers are: coreaudio, file.
 
 
-Had to hand edit the balman organ disposisition to use coreaudio not dsound.
 
 Had to instsall JDK version 11 (did not work with JDK version 16)
 
 
 wget -c --no-cookies --no-check-certificate --header "Cookie: oraclelicense=accept-securebackup-cookie" https://download.oracle.com/otn-pub/java/jdk/11.0.12+8/f411702ca7704a54a79ead0c2e0942a3/jdk-11.0.12_osx-x64_bin.dmg
+
+
+Dispositions are in 
+
+jorgan-bundle/target/jOrgan-4.0-beta2/dispositions
+
+Another is in BALMAIN_j320_FS (download from web)
+I had to hand edit the balman organ disposisition to use coreaudio not dsound.
